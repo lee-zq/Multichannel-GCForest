@@ -4,10 +4,10 @@ GcForest paper url： ( https://arxiv.org/abs/1702.08835 ).
 The official release of the gcForest code used in paper at [here](https://github.com/kingfengji/gcforest). 
 
 This project implements a **multi-channel deep-forest** based on the pylablanche's [work](https://github.com/pylablanche/gcForest). Thus, the project allows you to input multi-channels images.
-## Using GCForest
+## Using Multichannel-GCForest
 The model uses the sk-learn style with a `.fit()` function to train the gcForest and `.predict()` function to predict.
 
-### Training gcForest with samples (sample starting)
+### Training Multichannel-gcForest with samples (sample starting)
 The project contains a small sample data set, so you can directly run *main.py* for training, and you can directly see the test results, as follows:  
 ```
 cd ./   
@@ -38,7 +38,7 @@ weighted avg       0.89      0.88      0.88       300
  [ 27 123]]
 Confusion matrix, without normalization
 ```
-### Training gcForest with **youselves dataset**
+### Training Multichannel-gcForest with **youselves dataset**
 If you need to train gcforest with your own data：  
 ```python
 from GCForest import *
@@ -51,9 +51,9 @@ Using `sklearn.externals.joblib` save your model to disk and load it later.
 save trained model :  
 ```python
 from sklearn.externals import joblib
-joblib.dump(gcf, 'name_of_file.sav')
+joblib.dump(gcf, 'trained_model.sav')
 ```
 load trained model :  
 ```python
-joblib.load('name_of_file.sav')
+joblib.load('trained_model.sav')
 ```
