@@ -43,7 +43,7 @@ gcf = gcForest( **kwargs )
 gcf.fit(X_train, y_train)
 gcf.predict(X_test)
 ```
-**Saving and Loading Models**
+Saving and Loading Models
 Using `sklearn.externals.joblib` save your model to disk and load it later.   
 save trained model :  
 ```python
