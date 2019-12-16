@@ -36,14 +36,15 @@ weighted avg       0.89      0.88      0.88       300
  [ 27 123]]
 Confusion matrix, without normalization
 ```
-### Training gcForest with youselves dataset
+### Training gcForest with **youselves dataset**
+The model uses the scikit learn style with a .fit() function to train the algorithm and a .predict() function to predict.  
 ```python
 from GCForest import *
-gcf = gcForest( **kwargs )
-gcf.fit(X_train, y_train)
-gcf.predict(X_test)
+gcf = gcForest( **kwargs ) 
+gcf.fit(X_train, y_train)   # training
+gcf.predict(X_test)         # inference
 ```
-Saving and Loading Models
+### Saving and Loading trained Model
 Using `sklearn.externals.joblib` save your model to disk and load it later.   
 save trained model :  
 ```python
