@@ -10,7 +10,7 @@ import time
 
 
 # 加载数据集
-def get_data(data_path,p_dir,p_count,n_dir,n_count): # w是训练集图片边长
+def get_data(data_path,p_dir,p_count,n_dir,n_count): 
     data_numpy = []
     labels = []
     p_list = os.listdir(os.path.join(data_path, p_dir))
