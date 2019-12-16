@@ -1,4 +1,5 @@
-# A implementation of gcForest(or named deep Forest)---Multichannel-GCForest  
+# Multichannel-GCForest   
+A generalization of gcForest(or named deep Forest)
 ## Introduction
 GcForest paper url： ( https://arxiv.org/abs/1702.08835 ).
 The official release of the gcForest code used in paper at [here](https://github.com/kingfengji/gcforest). 
