@@ -6,7 +6,7 @@ The official release of the gcForest code used in paper at [here](https://github
 
 This project implements a **multi-channel deep-forest** based on the pylablanche's [work](https://github.com/pylablanche/gcForest). Thus, the project allows you to input multi-channels images.
 # Using GCForest
-The project contains a small sample data set, so you can directly run *main.py* for training, and you can directly see the test results  
+The project contains a small sample data set, so you can directly run *main.py* for training, and you can directly see the test results, as follows:
 ```
 cd ./   
 python main.py  
