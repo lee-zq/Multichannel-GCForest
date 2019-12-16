@@ -27,10 +27,8 @@ sliced_imgs shape after MGS：: (2700, 972)
 accuracy: 0.88
 kappa: 0.76
               precision    recall  f1-score   support
-
            0       0.84      0.94      0.89       150
            1       0.93      0.82      0.87       150
-
     accuracy                           0.88       300
    macro avg       0.89      0.88      0.88       300
 weighted avg       0.89      0.88      0.88       300
@@ -46,13 +44,13 @@ gcf.fit(X_train, y_train)
 gcf.predict(X_test)
 ```
 **Saving and Loading Models**
-Using `sklearn.externals.joblib` save your model to disk and load it later. 
-save trained model :
+Using `sklearn.externals.joblib` save your model to disk and load it later.   
+save trained model :  
 ```python
 from sklearn.externals import joblib
 joblib.dump(gcf, 'name_of_file.sav')
 ```
-load trained model :
+load trained model :  
 ```python
 joblib.load('name_of_file.sav')
 ```
