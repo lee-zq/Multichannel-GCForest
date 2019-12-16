@@ -5,13 +5,15 @@ The official release of the gcForest code used in paper at [here](https://github
 
 This project implements a **multi-channel deep-forest** based on the pylablanche's [work](https://github.com/pylablanche/gcForest). Thus, the project allows you to input multi-channels images.
 ## Using GCForest
-The project contains a small sample data set, so you can directly run *main.py* for training, and you can directly see the test results, as follows:
+The model uses the sk-learn style with a '.fit()' function to train the gcForest and '.predict()' function to predict.
+
 ### Training gcForest with samples (sample starting)
+The project contains a small sample data set, so you can directly run *main.py* for training, and you can directly see the test results, as follows:  
 ```
 cd ./   
 python main.py  
 ```
-result:
+Result:
 ```
 Slicing Images...
 sliced_imgs shape after MGS：: (2700, 972)
@@ -37,7 +39,7 @@ weighted avg       0.89      0.88      0.88       300
 Confusion matrix, without normalization
 ```
 ### Training gcForest with **youselves dataset**
-The model uses the scikit learn style with a .fit() function to train the algorithm and a .predict() function to predict.  
+If you need to train gcforest with your own data：  
 ```python
 from GCForest import *
 gcf = gcForest( **kwargs ) 
