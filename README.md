@@ -21,11 +21,8 @@ Adding/Training Layer, n_layer=2
 Layer validation accuracy = 0.9333333333333333
 Adding/Training Layer, n_layer=3
 Layer validation accuracy = 0.9333333333333333
-模型训练时间： 5.067959200000001
 Slicing Images...
 sliced_imgs shape after MGS：: (2700, 972)
-测试集结果：
-测试运行时间 1.4750 s
 accuracy: 0.88
 kappa: 0.76
               precision    recall  f1-score   support
@@ -36,7 +33,6 @@ kappa: 0.76
     accuracy                           0.88       300
    macro avg       0.89      0.88      0.88       300
 weighted avg       0.89      0.88      0.88       300
-
 [[141   9]
  [ 27 123]]
 Confusion matrix, without normalization
